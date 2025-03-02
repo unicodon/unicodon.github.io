@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Top Page</title>
-    <link rel="stylesheet" type="text/css" href="/css/base_025zilla.css"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="/css/base_025zilla.css"/>
+    <title>Event Detail</title>
 </head>
-
 <body>
 
 <div id="container">
@@ -46,20 +45,22 @@
     
 
 </div>
-
     <div id="content">
-        <h1>今後の予定</h1>
-
+        <h1>ログイン</h1>
         
-    </div> <!-- content -->
 
+        <form action="/login" method="post" class="login"><input type="hidden" name="_csrf" value="a0ebf5fc-1ec5-4e66-aae2-492c80e0f473"/>
+            <div><label for="username"> User Name:</label><input type="text" name="username" id="username"/></div>
+            <div><label for="password"> Password: </label><input type="password" name="password" id="password"/></div>
+            <div><input type="submit" value="Sign In"/></div>
+        </form>
+
+    </div>
     <div id="footer">
     <a href="https://github.com/feraoka/hunters">
         &copy; Hunter Studios
     </a>
 </div>
-
-</div> <!-- container -->
-
+</div>
 </body>
 </html>

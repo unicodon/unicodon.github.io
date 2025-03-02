@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Event List</title>
+    <link rel="stylesheet" type="text/css" href="/css/base_025zilla.css"/>
+    <script>
+        /*<![CDATA[*/
+        function selectYear() {
+            location.href = document.select_year.year.value
+        }
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+    <h1><a href="/">ハンターズ秘密基地</a></h1>
+
+    <div id="navigation">
+        <div>
+            <a href="/login">ログイン</a>
+        </div>
+        
+    </div> <!-- navigation -->
+</div>
+    <div id="menu">
+
+    <h3> メニュー </h3>
+    <ul>
+        <!--	  <li> <a href="/events">今後の予定</a> </li> -->
+        <li><a href="/events">活動記録</a></li>
+        <li>対戦成績
+            <ul>
+                <li><a href="/games">シーズン成績</a></li>
+                <li><a href="/teams">チーム別成績</a></li>
+            </ul>
+        </li>
+        <li><a href="/battings">打撃成績</a></li>
+        <li><a href="/battings/titles">歴代タイトル</a></li>
+        <li><a href="/members">メンバーポイント</a></li>
+        <li><a href="/members/attendance">ブヒブヒッ</a></li>
+    </ul>
+
+    <h3> リンク </h3>
+    <ul>
+        <li><a href="http://www10.atwiki.jp/monstars2/">基地外</a></li>
+        <li><a href="https://www.ocean-league.com/">オーシャンリーグ</a></li>
+    </ul>
+
+    
+
+</div>
+
+    <div id="content">
+        <h1>打撃成績</h1>
+
+        <form name="select_year" method="post" OnChange="selectYear()">
+            <select title="year" name="year" id="year">
+                <option value="/battings?year=2008">
+                    2008
+                </option>
+                <option value="/battings?year=2009">
+                    2009
+                </option>
+                <option value="/battings?year=2010">
+                    2010
+                </option>
+                <option value="/battings?year=2011">
+                    2011
+                </option>
+                <option value="/battings?year=2012">
+                    2012
+                </option>
+                <option value="/battings?year=2013">
+                    2013
+                </option>
+                <option value="/battings?year=2014">
+                    2014
+                </option>
+                <option value="/battings?year=2015">
+                    2015
+                </option>
+                <option value="/battings?year=2016">
+                    2016
+                </option>
+                <option value="/battings?year=2017">
+                    2017
+                </option>
+                <option value="/battings?year=2018">
+                    2018
+                </option>
+                <option value="/battings?year=2019" selected="selected">
+                    2019
+                </option>
+                <option value="/battings?year=All">
+                    All
+                </option>
+            </select>
+        </form>
+
+        <table class="bbase">
+            <tr>
+                <th align="left">選手</th>
+                <th align="center">試<br/>合<br/>数</th>
+                <th align="center">打<br/>席</th>
+                <th align="center">打<br/>数</th>
+                <th align="center">安<br/>打</th>
+                <th align="center">四<br/>球</th>
+                <th align="center">死<br/>球</th>
+                <th align="center">三<br/>振</th>
+                <th align="center">盗<br/>塁</th>
+                <th align="center">二<br/>塁<br/>打</th>
+                <th align="center">三<br/>塁<br/>打</th>
+                <th align="center">本<br/>塁<br/>打</th>
+                <th align="center">打<br/>点</th>
+                <th align="center">得<br/>点</th>
+                <th align="center">打<br/>率</th>
+                <th align="center">出<br/>塁<br/>率</th>
+                <th align="center">長<br/>打<br/>率</th>
+                <th align="center">NOI</th>
+            </tr>
+            <tr>
+                <td>待山</td>
+                <td class="number">7</td>
+                <td class="number">17</td>
+                <td class="number">16</td>
+                <td class="number">5</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">3</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">5</td>
+                <td class="number">0.313</td>
+                <td class="number">0.353</td>
+                <td class="number">0.375</td>
+                <td class="number">477</td>
+            </tr>
+            <tr>
+                <td>平岡</td>
+                <td class="number">7</td>
+                <td class="number">20</td>
+                <td class="number">16</td>
+                <td class="number">4</td>
+                <td class="number">4</td>
+                <td class="number">0</td>
+                <td class="number">5</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">0.250</td>
+                <td class="number">0.400</td>
+                <td class="number">0.313</td>
+                <td class="number">504</td>
+            </tr>
+            <tr>
+                <td>實川</td>
+                <td class="number">7</td>
+                <td class="number">24</td>
+                <td class="number">21</td>
+                <td class="number">5</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">4</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">4</td>
+                <td class="number">0.238</td>
+                <td class="number">0.333</td>
+                <td class="number">0.286</td>
+                <td class="number">428</td>
+            </tr>
+            <tr>
+                <td>川</td>
+                <td class="number">5</td>
+                <td class="number">14</td>
+                <td class="number">13</td>
+                <td class="number">3</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">0.231</td>
+                <td class="number">0.286</td>
+                <td class="number">0.462</td>
+                <td class="number">439</td>
+            </tr>
+            <tr>
+                <td>木村</td>
+                <td class="number">5</td>
+                <td class="number">14</td>
+                <td class="number">11</td>
+                <td class="number">2</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">4</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">4</td>
+                <td class="number">1</td>
+                <td class="number">0.182</td>
+                <td class="number">0.357</td>
+                <td class="number">0.273</td>
+                <td class="number">448</td>
+            </tr>
+            <tr>
+                <td>大久保</td>
+                <td class="number">6</td>
+                <td class="number">19</td>
+                <td class="number">18</td>
+                <td class="number">3</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">0.167</td>
+                <td class="number">0.211</td>
+                <td class="number">0.167</td>
+                <td class="number">266</td>
+            </tr>
+            <tr>
+                <td>荒井</td>
+                <td class="number">5</td>
+                <td class="number">15</td>
+                <td class="number">12</td>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">2</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">2</td>
+                <td class="number">0.083</td>
+                <td class="number">0.267</td>
+                <td class="number">0.083</td>
+                <td class="number">294</td>
+            </tr>
+            <tr>
+                <td>ラビ</td>
+                <td class="number">6</td>
+                <td class="number">15</td>
+                <td class="number">14</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">3</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0.071</td>
+                <td class="number">0.133</td>
+                <td class="number">0.143</td>
+                <td class="number">180</td>
+            </tr>
+            <tr>
+                <td>工藤</td>
+                <td class="number">7</td>
+                <td class="number">22</td>
+                <td class="number">20</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">3</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">5</td>
+                <td class="number">1</td>
+                <td class="number">0.050</td>
+                <td class="number">0.136</td>
+                <td class="number">0.050</td>
+                <td class="number">153</td>
+            </tr>
+            <tr>
+                <td>浦田</td>
+                <td class="number">4</td>
+                <td class="number">9</td>
+                <td class="number">9</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0.000</td>
+                <td class="number">0.000</td>
+                <td class="number">0.000</td>
+                <td class="number">0</td>
+            </tr>
+
+            <tr>
+                <td colspan=18 align="center"> 規定試合数未満</td>
+            </tr>
+
+            <tr>
+                <td>木村Jr.</td>
+                <td class="number">3</td>
+                <td class="number">9</td>
+                <td class="number">9</td>
+                <td class="number">5</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">5</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">2</td>
+                <td class="number">5</td>
+                <td class="number">0.556</td>
+                <td class="number">0.556</td>
+                <td class="number">0.889</td>
+                <td class="number">851</td>
+            </tr>
+
+            <tr>
+                <td>桜井</td>
+                <td class="number">1</td>
+                <td class="number">3</td>
+                <td class="number">3</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">1</td>
+                <td class="number">0.333</td>
+                <td class="number">0.333</td>
+                <td class="number">0.333</td>
+                <td class="number">444</td>
+            </tr>
+
+            <tr>
+                <td>篠崎</td>
+                <td class="number">1</td>
+                <td class="number">3</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0.000</td>
+                <td class="number">0.000</td>
+                <td class="number">0.000</td>
+                <td class="number">0</td>
+            </tr>
+
+            <tr>
+                <td>鈴木</td>
+                <td class="number">1</td>
+                <td class="number">3</td>
+                <td class="number">2</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0.000</td>
+                <td class="number">0.333</td>
+                <td class="number">0.000</td>
+                <td class="number">333</td>
+            </tr>
+
+            <tr>
+                <td>和田</td>
+                <td class="number">2</td>
+                <td class="number">4</td>
+                <td class="number">3</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0</td>
+                <td class="number">0.000</td>
+                <td class="number">0.250</td>
+                <td class="number">0.000</td>
+                <td class="number">250</td>
+            </tr>
+
+            <tr>
+                <td colspan=18 height="3px"></td>
+            </tr>
+
+            <tr>
+                <td>Total</td>
+                <td class="number">7</td>
+                <td class="number">191</td>
+                <td class="number">170</td>
+                <td class="number">31</td>
+                <td class="number">17</td>
+                <td class="number">4</td>
+                <td class="number">23</td>
+                <td class="number">26</td>
+                <td class="number">8</td>
+                <td class="number">0</td>
+                <td class="number">1</td>
+                <td class="number">19</td>
+                <td class="number">25</td>
+                <td class="number">0.182</td>
+                <td class="number">0.272</td>
+                <td class="number">0.247</td>
+                <td class="number">354</td>
+            </tr>
+        </table>
+
+        <h4>おことわり</h4>
+        <dl>
+            <dt>出塁率</dt>
+            <dd>
+                本来出塁率は<br/>
+                <i>出塁率 ＝（安打＋四死球）／（打数＋四死球＋犠飛）</i><br/>
+                で計算されますが、ハンターズでは分母を打席数で計算しています。
+                このため、犠打、打撃妨害、走塁妨害が出塁率にマイナスに作用します。
+            </dd>
+        </dl>
+        <dl>
+            <dt>規定試合数</dt>
+            <dd>
+                指定した期間に開催された全試合の半数以上に出場する必要があります。
+                例えば、シーズン7試合実施した場合、4試合参加が条件になります。
+            </dd>
+        </dl>
+    </div>
+
+    <div id="footer">
+    <a href="https://github.com/feraoka/hunters">
+        &copy; Hunter Studios
+    </a>
+</div>
+</div>
+</body>
+</html>

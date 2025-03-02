@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Game List</title>
+    <link rel="stylesheet" type="text/css" href="/css/base_025zilla.css"/>
+    <script>
+        /*<![CDATA[*/
+        function selectYear() {
+            location.href = document.select_year.year.value
+        }
+
+        /*]]>*/
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+    <h1><a href="/">ハンターズ秘密基地</a></h1>
+
+    <div id="navigation">
+        <div>
+            <a href="/login">ログイン</a>
+        </div>
+        
+    </div> <!-- navigation -->
+</div>
+    <div id="menu">
+
+    <h3> メニュー </h3>
+    <ul>
+        <!--	  <li> <a href="/events">今後の予定</a> </li> -->
+        <li><a href="/events">活動記録</a></li>
+        <li>対戦成績
+            <ul>
+                <li><a href="/games">シーズン成績</a></li>
+                <li><a href="/teams">チーム別成績</a></li>
+            </ul>
+        </li>
+        <li><a href="/battings">打撃成績</a></li>
+        <li><a href="/battings/titles">歴代タイトル</a></li>
+        <li><a href="/members">メンバーポイント</a></li>
+        <li><a href="/members/attendance">ブヒブヒッ</a></li>
+    </ul>
+
+    <h3> リンク </h3>
+    <ul>
+        <li><a href="http://www10.atwiki.jp/monstars2/">基地外</a></li>
+        <li><a href="https://www.ocean-league.com/">オーシャンリーグ</a></li>
+    </ul>
+
+    
+
+</div>
+    <div id="content">
+        <h1>シーズン成績</h1>
+        <form name="select_year" method="post" OnChange="selectYear()">
+            <select title="year" name="year" id="year">
+                <option value="/games?year=2008">
+                    2008
+                </option>
+                <option value="/games?year=2009">
+                    2009
+                </option>
+                <option value="/games?year=2010">
+                    2010
+                </option>
+                <option value="/games?year=2011">
+                    2011
+                </option>
+                <option value="/games?year=2012">
+                    2012
+                </option>
+                <option value="/games?year=2013">
+                    2013
+                </option>
+                <option value="/games?year=2014">
+                    2014
+                </option>
+                <option value="/games?year=2015">
+                    2015
+                </option>
+                <option value="/games?year=2016">
+                    2016
+                </option>
+                <option value="/games?year=2017">
+                    2017
+                </option>
+                <option value="/games?year=2018">
+                    2018
+                </option>
+                <option value="/games?year=2019" selected="selected">
+                    2019
+                </option>
+                <option value="/games?year=All">
+                    All
+                </option>
+            </select>
+        </form>
+
+        <p>
+            7 戦
+            <span>1勝</span>
+            <span>5敗</span>
+            <span>1分</span>
+        </p>
+
+        <table class="bbase">
+            <tr>
+                <th>日時</th>
+                <th>対戦相手</th>
+                <th>勝敗</th>
+                <th>得点</th>
+                <th>失点</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/events/168">2019-03-30 11:00</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%83%A9%E3%82%A4%E3%82%AC%E3%83%BC%E3%82%B9">ライガース</a>
+                </td>
+                <td align="center">勝ち</td>
+                <td align="right">13</td>
+                <td align="right">2</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/169">2019-04-13 17:00</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%83%94%E3%83%BC%E3%83%8A%E3%83%83%E3%83%84">ピーナッツ</a>
+                </td>
+                <td align="center">負け</td>
+                <td align="right">1</td>
+                <td align="right">12</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/170">2019-05-11 10:30</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B9">スーパーソニックス</a>
+                </td>
+                <td align="center">負け</td>
+                <td align="right">0</td>
+                <td align="right">2</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/171">2019-06-01 08:30</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA">モンスターズ</a>
+                </td>
+                <td align="center">負け</td>
+                <td align="right">1</td>
+                <td align="right">10</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/174">2019-07-20 10:30</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%83%E3%83%81">スクラッチ</a>
+                </td>
+                <td align="center">負け</td>
+                <td align="right">1</td>
+                <td align="right">17</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/175">2019-08-31 17:00</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%83%AC%E3%82%B3%E3%83%BC%E3%82%BA">レコーズ</a>
+                </td>
+                <td align="center">負け</td>
+                <td align="right">5</td>
+                <td align="right">11</td>
+        
+            <tr>
+                <td>
+                    <a href="/events/176">2019-10-05 11:00</a>
+                </td>
+                <td>
+                    <a href="/teams/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A3%E3%83%8B%E3%83%86%E3%82%A3">ブルーインフィニティ</a>
+                </td>
+                <td align="center">引分</td>
+                <td align="right">5</td>
+                <td align="right">5</td>
+        </table>
+    </div>
+
+    <div id="footer">
+    <a href="https://github.com/feraoka/hunters">
+        &copy; Hunter Studios
+    </a>
+</div>
+</div>
+</body>
+</html>
